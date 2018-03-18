@@ -7,24 +7,48 @@
   <body>
     <header class="page-header">
       <div class="logo">
-        <img src="#" width="" height="" alt="Логотип">
+        <img src="" width="" height="" alt="Логотип">
       </div>
       <nav class="main-navigation">
         <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <a class="basket" href="#">Корзина</a>
+        <div class="basket-bloсk">
+         <a class="basket" href="#">Корзина</a>
+        </div>
       </nav>
-      <section class="info">
-        <h1>
-          Долго, дорого, скрупулезно.
-        </h1>
-        <p>Математически выверенный дизайн для вашего сайта или
-           мобильного приложения.</p>
-           <a class="button" href="#">Узнать больше</a>
+      <!-- Изображение слайда задавать с помощью CSS?
+       И как добавить несколько слайдов?  -->
+      <section class="slider">
+        <div class="slider-1">
+          <h2>
+            Долго, дорого, скрупулезно.
+          </h2>
+          <p>Математически выверенный дизайн для вашего сайта или
+             мобильного приложения.</p>
+             <a class="button slider" href="#">Узнать больше</a>
+        </div>
+        <ul class="slides">
+          <li class="slider-active">
+            <button class= slide-btn>
+            Слайд1
+            </button>
+          </li>
+          <li>
+            <button class= slide-btn>
+            Слайд2
+            </button>
+          </li>
+          <li>
+            <button class= slide-btn>
+            Слайд3
+            </button>
+          </li>
+        </ul>
+
       </section>
       </header>
       <main>
@@ -51,7 +75,6 @@
              <a class="button-it" href="#">Заказать</a>
           </div>
         </section>
-        <hr>
         <section class="about-us left">
           <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический
@@ -79,23 +102,30 @@
             </tr>
           </table>
         </section>
+        <section class="partners">
+          <!--Как сделать ссылку рабочей, в чем ошибка? -->
+          <div class="htmlacademy">
+            <a href="http://htmlacademy.ru/intensive/htmlcss/"></a>
+            <img src="img/logo-1.png" alt="htmlacademy">
+          </div>
+          <div class="barbershop">
+            <a href="#"></a>
+            <img src="img/logo-2.png" alt="Барбершоп «Бородинский»">
+          </div>
+          <div class="Pink">
+            <a href="#"></a>
+            <img src="img/logo-3.png" alt="Pink">
+          </div>
+          <div class="Mishka">
+            <a href="#"></a>
+            <img src="img/logo-4.png" alt="MISHKA">
+          </div>
+        </section>
       </main>
-      <hr>
-      <!-- Что тут можно использовать? Див,список,таблицу?
-      <div class="partners">
-         <div class="">
-           <a href="#"></a>
-           <img src="#" alt="HTML Academy">
-         </div>
-         <div class="">
-
-         </div>
-      </div> -->
-
-      <hr>
     <footer>
       <div class="map">
-        <img src="" alt="Карта">
+        <!--Попробывал вставить карту -->
+        <img src="img/map.jpg" width="1000" height="350" alt="Карта">
       </div>
       <div class="logo-map">
         <img src="" alt="Nerds">
