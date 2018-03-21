@@ -6,89 +6,100 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="logo">
-        <img src="" width="" height="" alt="Логотип">
-      </div>
       <nav class="main-navigation">
-        <ul>
+        <a class="main-header-logo">
+         <img src="" width="" height="" alt="Логотип Nerds">
+        </a>
+        <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
+          <li class="basket-bloсk"><a class="basket" href="#">Корзина</a></li>
         </ul>
-        <div class="basket-bloсk">
-         <a class="basket" href="#">Корзина</a>
-        </div>
       </nav>
-      <!-- Изображение слайда задавать с помощью CSS?
-       И как добавить несколько слайдов?  -->
       <section class="slider">
-        <div class="slider-1">
-          <h2>
-            Долго, дорого, скрупулезно.
-          </h2>
-          <p>Математически выверенный дизайн для вашего сайта или
-             мобильного приложения.</p>
-             <a class="button slider" href="#">Узнать больше</a>
+        <input type="radio" name="slider1" id="slider-1" checked>
+        <input type="radio" name="slider2" id="slider-2">
+        <input type="radio" name="slider3" id="slider-3">
+        <div class="slider-switchers">
+          <label for="slider-1"></label>
+          <label for="slider-2"></label>
+          <label for="slider-3"></label>
         </div>
-        <ul class="slides">
-          <li class="slider-active">
-            <button class= slide-btn>
-            Слайд1
-            </button>
-          </li>
-          <li>
-            <button class= slide-btn>
-            Слайд2
-            </button>
-          </li>
-          <li>
-            <button class= slide-btn>
-            Слайд3
-            </button>
-          </li>
-        </ul>
-
+        <div class="slades">
+          <div class="slide slide1">
+            <h2 class="slide-title">
+              Долго, дорого, скрупулезно
+            </h2>
+            <p class="slide-text">
+              Математически выверенный дизайн для вашего сайта или
+                 мобильного приложения.
+            </p>
+            <a class="button slide" href="#">Узнать больше</a>
+          </div>
+          <div class="slide slide2">
+            <h2 class="slide-title">
+              Любим математику как никто другой
+            </h2>
+            <p class="slide-text">
+              Никакого креатива, только математические формулы
+              для расчета идеальных пропорций.
+            </p>
+            <a class="button slide" href="#">Узнать больше</a>
+          </div>
+          <div class="slide slide3">
+            <h2 class="slide-title">
+              Только ночь, только хардкор
+            </h2>
+            <p class="slide-text">
+              Работать днем, как все? Мы против этого.
+              Ближе к полуночи работа только начинается.
+            </p>
+            <a class="button slide" href="#">Узнать больше</a>
+          </div>
+        </div>
       </section>
       </header>
       <main>
         <section class="items">
           <div class="web-site">
-            <img src="" alt="Веб-сайты">
-            <h2>Веб-сайты</h2>
-            <p>Мир никогда не будет прежним
+            <img src="#" alt="Веб-сайты">
+            <h3 class="items-title">Веб-сайты</h3>
+            <p class="items-text">Мир никогда не будет прежним
             после того как увидит ваш сайт!</p>
             <a class="button-it" href="#">Заказать</a>
           </div>
           <div class="applications">
-            <img src="" alt="Приложения">
-            <h2>Приложения</h2>
-            <p>Покорите топ-10 приложений в
+            <img src="#" alt="Приложения">
+            <h3 class="items-title">Приложения</h3>
+            <p class="items-text">Покорите топ-10 приложений в
             AppStore и Google Play</p>
             <a class="button-it" href="#">Заказать</a>
           </div>
-          <div class="Present">
-            <img src="" alt="Презентации">
-            <h2>Презентации</h2>
-            <p>Вы даже не подозреваете,
+          <div class="Presentation">
+            <img src="#" alt="Презентации">
+            <h3 class="items-title">Презентации</h3>
+            <p class="items-text">Вы даже не подозреваете,
 насколько вы изумительны!</p>
              <a class="button-it" href="#">Заказать</a>
           </div>
         </section>
-        <section class="about-us left">
-          <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <div class="about-us">
+        <section class="about-us-left">
+          <h2 class="about-us-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический
              расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <b>Выполняем заказы на разработку:</b>
+          <h3>Выполняем заказы на разработку:</h3>
           <ul>
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для IOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </section>
-        <section class="about-us right">
-          <img src="#" alt="colorlogo">
-          <b>с 2004 года любим точность во всем:</b>
+        <section class="about-us-right">
+          <img src="#" alt="Логотип colorNerds">
+          <h3>с 2004 года любим точность во всем:</h3>
           <table>
             <tr>
               <td>146%</td>
@@ -102,43 +113,45 @@
             </tr>
           </table>
         </section>
-        <section class="partners">
-          <!--Как сделать ссылку рабочей, в чем ошибка? -->
-          <div class="htmlacademy">
-            <a href="http://htmlacademy.ru/intensive/htmlcss/"></a>
-            <img src="img/logo-1.png" alt="htmlacademy">
-          </div>
-          <div class="barbershop">
-            <a href="#"></a>
-            <img src="img/logo-2.png" alt="Барбершоп «Бородинский»">
-          </div>
-          <div class="Pink">
-            <a href="#"></a>
-            <img src="img/logo-3.png" alt="Pink">
-          </div>
-          <div class="Mishka">
-            <a href="#"></a>
-            <img src="img/logo-4.png" alt="MISHKA">
-          </div>
+        </div>
+        <section class="our-works">
+          <ul>
+            <li><a href="http://htmlacademy.ru/intensive/htmlcss/">
+                   <img src="#" alt="htmlacademy">
+                </a>
+              </li>
+            <li><a href="#">
+                   <img src="#" alt="Барбершоп «Бородинский»">
+                 </a>
+            </li>
+            <li><a href="#">
+                   <img src="#" alt="PINK">
+                </a>
+            </li>
+            <li><a href="#">
+                   <img src="#" alt="MISHKA">
+                </a>
+            </li>
+          </ul>
         </section>
       </main>
     <footer>
-      <div class="map">
-        <!--Попробывал вставить карту -->
-        <img src="img/map.jpg" width="1000" height="350" alt="Карта">
-      </div>
-      <div class="logo-map">
-        <img src="" alt="Nerds">
-      </div>
-      <section class="contacts">
-        <h2>Nerds desing studio</h2>
-        <p>
-        191186, Санкт-Петербург,<br>
-        ул.Б.Конюшенная, д. 19/8<br>
-        тел. +7 (812)275-75-75
-       </p>
-       <a class="button" href="#">Напишите нам</a>
-      </section>
+      <!-- Логотип будет сразу вставлен в карту-->
+       <section class="map-contact">
+         <div class="map-logo">
+           <img src="#" alt="Карта">
+         </div>
+         <div class="contact">
+           <h3>Nerds desing studio</h3>
+           <p>
+           191186, Санкт-Петербург,<br>
+           ул.Б.Конюшенная, д. 19/8<br>
+           тел. +7 (812)275-75-75
+           </p>
+           <a class="button" href="#">Напишите нам</a>
+             <!-- Будет форма "Напишите нам"       -->
+         </div>
+       </section>
       <section class="social">
         <div class="footer-social">
           <ul>
@@ -146,10 +159,11 @@
            <li><a class="social-button" href="#">Фейсбук</a></li>
            <li><a class="social-button" href="#">Инстаграм</a></li>
           </ul>
-          <!-- Напишите нам         -->
         </div>
-        <b>Давайте дружить, это выгодно!</b>
-       <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="social-info">
+          <b>Давайте дружить, это выгодно!</b>
+          <p class="social-info-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
     </footer>
   </body>
