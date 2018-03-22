@@ -22,37 +22,72 @@
       </header>
 
       <main class="Container">
-<!--Будет форма
         <section class="filter">
           <h2 class="visually-hidden">Фильтр</h2>
-
-          <fieldset>
-            <legend>Стоимость:</legend>
-             <input type="range" id="price-id" name="price" min="0" max="15000">
-             от
-             до
-          </fieldset>
-
-          <fieldset>
+          <form class="filter" action="#" method="post">
+            <fieldset class="price-filter">
+              <legend>Стоимость:</legend>
+              <!--Как это сделать?  -->
+               <input type="range" id="price-id" name="price-filter" min="0" max="15 000">
+               <label for="min-price">от</label>
+               <input type="text" class="min-price" value="0" id="min-price">
+               <label for="max-price">до</label>
+               <input type="text" class="max-price" value="15 000" id="max-price">
+            </fieldset>
+          <fieldset class="grid-filter">
             <legend>Сетка:</legend>
             <ul>
-              <li class=""></li>
-              <li class=""></li>
-              <li class=""></li>
+              <li class="filter-option">
+                <input class="visually-hidden grid-filter radio" type="radio"
+                 name="grid" value="adaptive" id="adaptive" checked disabled>
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden grid-filter radio" type="radio"
+                 name="grid" value="fixed" id="fixed">
+                <label for="fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden grid-filter radio" type="radio"
+                 name="grid" value="rubber" id="rubber">
+                <label for="rubber">Резиновая</label>
+              </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="features-filter">
             <legend>Особенности:</legend>
              <ul>
-               <li class="filter-option">Слайдер</li>
-               <li class="filter-option">Блок преимуществ</li>
-               <li class="filter-option">Новости</li>
-               <li class="filter-option">Галерея</li>
-               <li class="filter-option">Корзина</li>
+               <li class="filter-option">
+                 <input class="visually-hidden features-filter checkbox" type="checkbox"
+                  id="slider"  name="slider">
+                 <label for="slider">Слайдер</label>
+               </li>
+               <li class="filter-option">
+                 <input class="visually-hidden features-filter checkbox" type="checkbox"
+                id="advantage"  name="advantage">
+                <label for="advantage">Блок преимуществ</label>
+               </li>
+               <li class="filter-option">
+                 <input class="visually-hidden features-filter checkbox" type="checkbox"
+                 id="news" name="news">
+                 <label for="news">Новости</label>
+               </li>
+               <li class="filter-option">
+                 <input class="visually-hidden features-filter checkbox" type="checkbox"
+                id="gallery" name="gallery">
+                 <label for="gallery">Галерея</label>
+               </li>
+               <li class="filter-option">
+                 <input class="visually-hidden features-filter checkbox" type="checkbox"
+                  id="basket" name="basket" >
+                <label for="basket">Корзина</label>
+               </li>
              </ul>
           </fieldset>
-          <input type="submit" value="Показать">
-        </section> -->
+          <button type="submit">Показать</button>
+         </form>
+        </section>
+
 
         <section class="catalog-sort-items">
           <h2 class="visually-hidden">Список товаров</h2>
@@ -145,7 +180,6 @@
                тел. +7 (812)275-75-75
                </p>
                <a class="button" href="#">Напишите нам</a>
-                 <!-- Будет форма "Напишите нам"       -->
              </div>
            </section>
           <section class="social">
@@ -162,5 +196,26 @@
             </div>
           </section>
         </footer>
+        <!-- Форма "Напишите нам"  -->
+        <section class="modal-write-us-form">
+          <h2>Напишите нам</h2>
+          <form class="write-us-form" action="#" method="post">
+            <p>
+              <label for="name-form">Ваше имя:</label>
+              <input type="text" name="name-form" id="name-form" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="mail-form">Ваш e-mail:</label>
+            <input type="email" name="mail-form" id="mail-form" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="text-form">Текст письма:</label><br>
+              <textarea name="text-form" id="text-form" rows="5" cols="50"
+               placeholder="В свободной форме"></textarea>
+            </p>
+            <button type="submit" class="button">Отправить</button>
+          </form>
+          <button class="close-form" type="button">Закрыть</button>
+        </section>
       </body>
     </html>
