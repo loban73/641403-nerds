@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -13,14 +15,13 @@
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="catalog.html" class="nav-current">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
           <li class="basket-bloсk"><a class="basket" href="#">Корзина</a></li>
         </ul>
       </nav>
       <h1 class="page-catalog">Магазин готовых шаблонов</h1>
       </header>
-
       <main class="Container">
         <section class="filter">
           <h2 class="visually-hidden">Фильтр</h2>
@@ -87,8 +88,6 @@
           <button type="submit">Показать</button>
          </form>
         </section>
-
-
         <section class="catalog-sort-items">
           <h2 class="visually-hidden">Список товаров</h2>
           <ul class="catalog-list">
@@ -191,7 +190,7 @@
               </ul>
             </div>
             <div class="social-info">
-              <b>Давайте дружить, это выгодно!</b>
+              <h4>Давайте дружить, это выгодно!</h4>
               <p class="social-info-text">Скидка 10% для друзей из социальных сетей.</p>
             </div>
           </section>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -37,7 +38,7 @@
               Математически выверенный дизайн для вашего сайта или
                  мобильного приложения.
             </p>
-            <a class="button slide" href="#">Узнать больше</a>
+            <a class="button-slide" href="#">Узнать больше</a>
           </div>
           <div class="slide slide2">
             <h2 class="slide-title">
@@ -47,7 +48,7 @@
               Никакого креатива, только математические формулы
               для расчета идеальных пропорций.
             </p>
-            <a class="button slide" href="#">Узнать больше</a>
+            <a class="button-slide" href="#">Узнать больше</a>
           </div>
           <div class="slide slide3">
             <h2 class="slide-title">
@@ -57,7 +58,7 @@
               Работать днем, как все? Мы против этого.
               Ближе к полуночи работа только начинается.
             </p>
-            <a class="button slide" href="#">Узнать больше</a>
+            <a class="button-slide" href="#">Узнать больше</a>
           </div>
         </div>
       </section>
@@ -78,7 +79,7 @@
             AppStore и Google Play</p>
             <a class="button-it" href="#">Заказать</a>
           </div>
-          <div class="Presentation">
+          <div class="presentation">
             <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
             <h3 class="items-title">Презентации</h3>
             <p class="items-text">Вы даже не подозреваете,
@@ -93,21 +94,21 @@
              расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h3>Выполняем заказы на разработку:</h3>
           <ul>
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для IOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
+            <li class="about-us-li">Веб-сайтов любой сложности</li>
+            <li class="about-us-li">Мобильных приложений для IOS и Android</li>
+            <li class="about-us-li">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </section>
         <section class="about-us-right">
           <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип colorNerds">
           <h3>с 2004 года любим точность во всем:</h3>
           <table>
-            <tr>
+            <tr class="text-top">
               <td>146%</td>
               <td>100%</td>
               <td>50%</td>
             </tr>
-            <tr>
+            <tr class="text-bottom">
               <td>Уровень самоотдачи</td>
               <td>Соблюдение сроков</td>
               <td>Минимальная предоплата</td>
@@ -161,7 +162,7 @@
           </ul>
         </div>
         <div class="social-info">
-          <b>Давайте дружить, это выгодно!</b>
+          <h4>Давайте дружить, это выгодно!</h4>
           <p class="social-info-text">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
@@ -172,11 +173,11 @@
       <form class="write-us-form" action="#" method="post">
         <p>
           <label for="name-form">Ваше имя:</label>
-          <input type="text" name="name-form" id="name-form" placeholder="Имя Фамилия">
+          <input type="text" name="name-form" id="name-form" placeholder="Имя Фамилия" required>
         </p>
         <p>
           <label for="mail-form">Ваш e-mail:</label>
-        <input type="email" name="mail-form" id="mail-form" placeholder="email@example.com">
+        <input type="email" name="mail-form" id="mail-form" placeholder="email@example.com" required>
         </p>
         <p>
           <label for="text-form">Текст письма:</label><br>

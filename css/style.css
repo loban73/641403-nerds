@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight:normal;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+header,
+.block-buy {
+  background-color:#eeeeee;
+}
+.main-navigation {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+.main-navigation ul,
+.our-works ul,
+.footer-social ul,
+.about-us-left ul {
+  list-style:none;
+}
+.main-navigation a {
+  color: #000000;
+}
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #fb565a;
+}
+.main-navigation a:active {
+  color: #ababab;
+}
+.slades h2 {
+  font-size: 55px;
+  line-height: 55px;
+}
+.slades a {
+  line-height: 18px;
+  color:#ffffff;
+  background-color:#fb565a;
+  text-transform: uppercase;
+  text-align: center;
+}
+.slades a:hover,
+.slades a:focus, {
+background-color:#e74246;
+}
+.slades a:active {
+  color: #e26f72;
+  background-color:#d7373b;
+}
+.items h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.web-site a,
+.applications a,
+.presentation a {
+  line-height: 18px;
+  color:#ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.web-site a {
+  background-color:#fb565a;
+}
+.web-site a:hover,
+.web-site a:focus {
+  background-color:#e74246;
+}
+.web-site a:active {
+  color: #e26f72;
+  background-color:#d7373b;
+}
+.applications a {
+ background-color:#00ca74;
+}
+.applications a:hover,
+.applications a:focus {
+  background-color:#00bc6c;
+}
+.applications a:active {
+  color:#48c28e;
+  background-color:#00aa62;
+}
+.presentation a {
+  background-color:#efc84a;
+}
+.presentation a:hover,
+.presentation a:focus {
+  background-color:#eab534
+}
+.presentation a:active{
+  color:#ecbe5c;
+  background-color:#e5a722;
+}
+.about-us-title {
+  font-size: 45px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+.about-us h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* Почему не работает?
+.about-us-left li::before {
+  content: "";
+  height: 2px;
+  width: 25px;
+  background: #fb565a;
+  position: absolute;
+  left: 0;
+  top: 10px;
+} */
+
+.about-us-right .text-top {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+}
+.about-us-right .text-bottom {
+  font-size: 16px;
+  line-height: 18px;
+  color: #283136
+}
+/*
+.our-works {
+  display: table;
+  weight:100%;
+  border-bottom: 2px solid #eeeeee;
+} */
+.our-works a {
+  opacity: 0.2;
+}
+.our-works a:hover,
+.our-works a:focus {
+  opacity: 1;
+}
+.our-works a:active {
+  opacity: 0.1;
+}
+.contact h3{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.contact p{
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666
+}
+.contact a {
+  line-height: 18px;
+  color:#ffffff;
+  background-color:#fb565a;
+  text-transform: uppercase;
+  text-align: center;
+}
+.social-info h4 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.social-info p {
+  line-height: 22px;
+  color: #444444
+}
+
+.modal-write-us-form {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.modal-write-us-form h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+.modal-write-us-form input:hover,
+.modal-write-us-form input:focus {
+  color: #000000;
+  text-transform: none;
+
+  border: 2px solid #000000;
+}
+/* страница каталога */
+.filter fieldset {
+  border: none;
+}
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+}
+.features-filter + label,
+.features-filter + label,
+.grid-filter + label,
+.grid-filter + label {
+  color: #283136;
+}
+.features-filter:hover + label,
+.features-filter:focus + label,
+.grid-filter:hover + label,
+.grid-filter:focus + label {
+  color: #000000;
+}
+.features-filter:disabled + label,
+.features-filter:disabled + label,
+.grid-filter:disabled + label,
+.grid-filter:disabled + label {
+  opacity: 0.3;
+}
+.catalog-list,
+.pagination-list {
+  list-style: none;
+}
+.block-buy{text-align: center;}
+.block-buy h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color:#000000;
+  text-transform: uppercase;
+}
+.block-buy p {
+  font-size: 16px;
+  line-height: 18px;
+  color:#666666;
+}
+.catalog-item button,
+.modal-write-us-form .button {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background:#fb565a;
+  border: none;
+}
+.catalog-item button:hover,
+.catalog-item button:focus {
+  background-color:#e74246;
+}
+.catalog-item button:active {
+  color: #e26f72;
+  background-color:#d7373b;
+}
+.pagination-list a,
+.filter button {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  background:#eeeeee;
+  border: none;
+  text-align: center;
+}
+.filter button:hover,
+.filter button:focus,
+.pagination-list a:hover,
+.pagination-list a:focus {
+  background:#dfdfdf;
+}
+.filter button:active
+.pagination-list a:active {
+  background:#d5d5d5;
+  color: #959595;
+}
+.pagination-item-current a {
+  background:#ffffff;
+}
