@@ -8,8 +8,8 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="layout-center-wrapper">
-      <nav class="main-navigation clearfix">
+      <div class="container">
+      <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds">
         </a>
@@ -24,8 +24,8 @@
       <h1 class="title-page-catalog">Магазин готовых шаблонов</h1>
        </div>
       </header>
-      <div class="layout-center-wrapper">
-      <main class="Container clearfix">
+      <main class="main-catalog">
+        <div class="main-container container">
         <section class="filter">
           <h2 class="visually-hidden">Фильтр</h2>
           <form class="filter" action="#" method="post">
@@ -92,6 +92,16 @@
          </form>
         </section>
         <section class="catalog-sort-items">
+          <ul class="sorting-list">
+            <li class="sorting-list-title">сортировать:</li>
+            <li class="sorting-list-li"><a class="sorting-list-option" href="#">по цене</a></li>
+            <li class="sorting-list-li"><a class="sorting-list-option" href="#">по типу</a></li>
+            <li class="sorting-list-li"><a class="sorting-list-option" href="#">по названию</a></li>
+            <li class="sorting-list-li direction">
+              <a class="direction-low" href="#"></a>
+              <a class="direction-high" href="#"></a>
+            </li>
+          </ul>
           <h2 class="visually-hidden">Список товаров</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -164,11 +174,11 @@
             <li class="pagination-item current"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a> </li>
-            <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
+            <li class="pagination-item"><a href="#">следующая</a></li>
           </ul>
         </section>
+       </div>
       </main>
-      </div>
         <footer>
           <section class="map-contact clearfix">
             <div class="map-logo">
