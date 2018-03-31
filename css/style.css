@@ -40,18 +40,42 @@ header,
 .main-header-logo {
   margin: 25px 20px 0 0;
 }
+.main-navigation .site-navigation-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 800px;
+}
 .site-navigation {
   padding: 0;
-  max-width: 800px;
-  margin: 55px 0 0;
+  width: 440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 .site-navigation li{
-  margin: 0 0 10px 45px;
   display: inline-block;
 }
-.site-navigation .basket-bloсk{
-  margin: 0 0 0 120px;
+.site-navigation-container .basket-bloсk {
+  position: relative;
+  width: 120px;
 }
+/* Иконку корзины не виднно, что нужно сделать? */
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 16px;
+  height: 16px;
+
+  background-image: url("img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #ff0000;
+}
+
 .slides {
   min-height:400px;
   position: relative;
@@ -195,7 +219,8 @@ td {
 .map-contact{
   position: relative;
   height: 430px;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 .map-logo {
   /*position: absolute;*/
