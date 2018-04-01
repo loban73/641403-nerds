@@ -70,10 +70,9 @@ header,
   width: 16px;
   height: 16px;
 
-  background-image: url("img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: #ff0000;
 }
 
 .slides {
@@ -216,14 +215,16 @@ td {
   text-align: center;
   vertical-align: middle;
 }
-.map-contact{
-  position: relative;
+.map-contact {
+  width: 100%;
   height: 430px;
-  display: flex;
-  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
 }
-.map-logo {
-  /*position: absolute;*/
+.map-contact img {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .map-contact .contact {
   width: 240px;
@@ -248,10 +249,35 @@ td {
   align-items: stretch;
 }
 .footer-social ul{
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 260px;
+  padding: 0;
 }
-.social-info {
+.social-button {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  background-color: #e1e1e1;
+}
+.social-button img {
+  padding-top: 30px;
+}
+/*
+.social-button .btn-vk::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 15px;
+  background: url("../img/vk-icon.svg") no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+} */
+.footer-social .social-info {
   text-align: left;
   margin: 0;
 }
@@ -379,7 +405,7 @@ a {
 /*.slides a */
 .button-slide {
   display: block;
-  padding: 9px 0;
+  padding: 15px 0;
   border-radius: 3px;
   line-height: 18px;
   color:#ffffff;
@@ -412,7 +438,7 @@ background-color:#e74246;
   width: 160px;
   border-radius: 3px;
   display: block;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 .web-site a {
   background-color:#fb565a;
@@ -488,7 +514,6 @@ background-color:#e74246;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
-
 }
 .contact .tel{
   padding-bottom: 35px;
