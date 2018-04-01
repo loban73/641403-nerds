@@ -13,6 +13,9 @@ body {
   position: relative;
   display: block;
 }
+.visually-hidden {
+  display: none;
+}
   /* сетка */
 header {
   padding:0;
@@ -238,7 +241,6 @@ td {
   background: #ffffff;
   position: absolute;
 }
-
 .social {
   padding: 80px 0;
 }
@@ -261,13 +263,8 @@ td {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-
   background-color: #e1e1e1;
 }
-.social-button img {
-  padding-top: 30px;
-}
-
 .btn-vk::before {
   content: "";
   display: block;
@@ -277,13 +274,33 @@ td {
   position: relative;
   left: 25px;
   top: 33px;
-  background-color:red;
+}
+.btn-fd::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 22px;
+  background: url("../img/fb-icon.svg") no-repeat;
+  position: relative;
+  left: 32px;
+  top: 30px;
+}
+.btn-inst::before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url("../img/insta-icon.svg") no-repeat;
+  position: relative;
+  left: 30px;
+  top: 30px;
 }
 .footer-social .social-info {
   text-align: left;
   margin: 0;
   padding-top: 20px;
 }
+
 .modal-write-us-form {
   display: none;
 }
@@ -319,6 +336,7 @@ fieldset {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  width: 680px;
 }
 .sorting-list-title {
   font-size: 18px;
@@ -330,10 +348,61 @@ fieldset {
 .sorting-list-li {
   margin-right: 25px;
 }
-.sorting-list-option{
+.sorting-list-option {
   font-size: 14px;
   line-height: 18px;
   color:#000000;
+  opacity: 0.3;
+}
+.sorting-list-option:hover,
+.sorting-list-option:focus {
+  opacity: 0.6;
+}
+.sorting-list-option:active {
+  opacity: 1;
+}
+.sorting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.sorting-list-direction {
+  list-style:none;
+  display: flex;
+}
+.sorting-list-direction li:first-child {
+  margin-right:15px;
+}
+.direction-low-li,
+.direction-high-li {
+  opacity: 0.2;
+}
+.direction-low-li:hover,
+.direction-low-li:focus,
+.direction-high-li:hover,
+.direction-high-li:focus {
+  opacity: 0.6;
+}
+.direction-low-li:active,
+.direction-high-li:active {
+  opacity: 1;
+}
+.direction-low::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 10px;
+    background: url("../img/icon-down-dir.svg") no-repeat;
+    position: relative;
+}
+.direction-high::before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 10px;
+  background: url("../img/icon-up-dir.svg") no-repeat;
+  position: relative;
 }
 .catalog-list {
   padding: 0;
@@ -345,46 +414,81 @@ fieldset {
 .catalog-item {
   width:360px;
   position: relative;
-  border-top: 40px solid #e9e9e9;
-  border-radius: 3px;
-  vertical-align: top;
   margin-bottom: 40px;
 }
 .catalog-item img {
   max-width: 100%;
   max-height: 100%;
 }
+/* Вопрос ????*/
+.catalog-item::before {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 40px;
+  background: url("../img/browser.svg") no-repeat;
+  position: relative;
+}
 .block-buy {
   display: none;
   width: 360px;
   height: 230px;
   position: absolute;
-  top: 350px;
+  top: 390px;
 }
 .catalog-item:hover .block-buy{
   display: block;
   width: 360px;
   height: 230px;
   position: absolute;
-  top: 350px;
+  top: 390px;
 }
 .pagination-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 460px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pagination-item-current,
+.pagination-item,
+.pagination-item-next {
+  display: block;
+  border-radius: 3px;
+  color: #000000;
+  width: 50px;
+  padding: 15px 0;
+}
+/* Вопрос ????*/
+.pagination-item-current {
+  background: 2px solid #dbdbdb;
 }
 .pagination-item {
-  margin: 0 10px 0 0;
-  padding: 10px 15px;
-  border-radius: 3px;
-  text-align: center;
   background: #eeeeee;
 }
-
-/* end сетка */
+.pagination-item-next {
+  background: #eeeeee;
+  width: 260px;
+}
+.pagination-item:hover,
+.pagination-item:focus,
+.pagination-item-next:hover,
+.pagination-item-next:focus {
+  background:#dfdfdf;
+}
+.pagination-item:active,
+.pagination-item-next:active {
+  background:#d5d5d5;
+  color: #959595;
+}
 a {
   text-decoration: none;
 }
-
 .main-navigation ul,
 .our-works ul,
 .footer-social ul,
@@ -407,7 +511,6 @@ a {
 .basket-bloсk a:active {
   color: #ababab;
   border-bottom: 2px #fb565a solid;
-   /*box-shadow: 0 2px 0 0 #fb565a; */
 }
 .slide-title {
   font-size: 55px;
@@ -426,10 +529,13 @@ a {
   margin-top: 40px;
 }
 .button-slide:hover,
-.button-slide:focus {
+.button-slide:focus,
+.social-button:hover,
+.social-button:focus {
 background-color:#e74246;
 }
-.button-slide:active {
+.button-slide:active,
+.social-button:active {
   color: #e26f72;
   background-color:#d7373b;
 }
@@ -438,6 +544,7 @@ background-color:#e74246;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  padding-top: 20px;
 }
 .web-site a,
 .applications a,
@@ -515,7 +622,7 @@ background-color:#e74246;
 .our-works a:active {
   opacity: 0.1;
 }
-.contact h3{
+.contact h3 {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -612,13 +719,27 @@ background-color:#e74246;
   font-weight: bold;
   color:#000000;
   text-transform: uppercase;
+  padding-top: 5px;
 }
 .block-buy p {
   font-size: 16px;
   line-height: 18px;
   color:#666666;
+  padding-bottom: 15px;
 }
-.catalog-item button,
+.catalog-item .button-buy {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background:#fb565a;
+  display: block;
+  width: 200px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 3px;
+  margin: auto;
+}
 .modal-write-us-form .button {
   font-size: 16px;
   line-height: 18px;
@@ -633,27 +754,4 @@ background-color:#e74246;
 .catalog-item button:active {
   color: #e26f72;
   background-color:#d7373b;
-}
-.pagination-list a,
-.filter button {
-  font-size: 16px;
-  line-height: 18px;
-  color: #000000;
-  background:#eeeeee;
-  border: none;
-  text-align: center;
-}
-.filter button:hover,
-.filter button:focus,
-.pagination-list a:hover,
-.pagination-list a:focus {
-  background:#dfdfdf;
-}
-.filter button:active
-.pagination-list a:active {
-  background:#d5d5d5;
-  color: #959595;
-}
-.pagination-item-current a {
-  background:#ffffff;
 }
