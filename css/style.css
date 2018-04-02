@@ -478,11 +478,14 @@ fieldset {
 .pagination-item:hover,
 .pagination-item:focus,
 .pagination-item-next:hover,
-.pagination-item-next:focus {
+.pagination-item-next:focus,
+.filter button:hover,
+.filter button:focus {
   background:#dfdfdf;
 }
 .pagination-item:active,
-.pagination-item-next:active {
+.pagination-item-next:active,
+.filter button:active {
   background:#d5d5d5;
   color: #959595;
 }
@@ -747,11 +750,21 @@ background-color:#e74246;
   background:#fb565a;
   border: none;
 }
-.catalog-item button:hover,
-.catalog-item button:focus {
+.catalog-item .button-buy:hover,
+.catalog-item .button-buy:focus {
   background-color:#e74246;
 }
-.catalog-item button:active {
+.catalog-item .button-buy:active {
   color: #e26f72;
   background-color:#d7373b;
+}
+.filter button {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 260px;
+  padding: 15px 0;
+  background: #eeeeee;
+  border: none;
 }
